@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsmind/style/jsmind.css">
+  <style>
+    #jsmind_container {
+      width: 500px;
+      /* height: 500px; */
+    }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/jsmind/js/jsmind.js"></script>
+  <div id="jsmind_container"></div>
+  <script type="text/javascript">
+    var mind = {
+    /* 元数据，定义思维导图的名称、作者、版本等信息 */
+    "meta":{
+        "name":"jsMind-demo-tree",
+        "author":"hizzgdev@163.com",
+        "version":"0.2"
+    },
+    /* 数据格式声明 */
+    "format":"node_tree",
+    /* 数据内容 */
+    "data":{"id":"root","topic":"jsMind","children":[
+        {"id":"easy","topic":"Easy","direction":"left","expanded":false,"children":[
+            {"id":"easy1","topic":"Easy to show"},
+            {"id":"easy2","topic":"Easy to edit"},
+            {"id":"easy3","topic":"Easy to store"},
+            {"id":"easy4","topic":"Easy to embed"}
+        ]},
+    ]}
+};
+    var options = {                   // options 将在下一章中详细介绍
+        container:'jsmind_container', // [必选] 容器的ID，或者为容器的对象
+        editable:false,                // [可选] 是否启用编辑
+        theme:'primary'                // [可选] 主题
+    };
+    var jm = new jsMind(options);
+    jm.show(mind);
+</script>
+</body>
+</html>
