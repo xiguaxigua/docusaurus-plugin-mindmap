@@ -7,15 +7,15 @@ const path = require('path')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'docusaurus-plugin-drawio',
-  tagline: 'support to use draw.io in your website',
+  title: 'docusaurus-plugin-mindmap',
+  tagline: 'support to use mindmap in your website',
   url: 'https://xiguaxigua.com',
-  baseUrl: '/docusaurus-plugin-drawio/',
+  baseUrl: '/docusaurus-plugin-mindmap/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'xiguaxigua', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-plugin-drawio', // Usually your repo name.
+  projectName: 'docusaurus-plugin-mindmap', // Usually your repo name.
 
   presets: [
     [
@@ -26,7 +26,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/xiguaxigua/docusaurus-plugin-drawio/edit/master/',
+            'https://github.com/xiguaxigua/docusaurus-plugin-mindmap/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -41,7 +41,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'docusaurus-plugin-drawio',
+        title: 'docusaurus-plugin-mindmap',
         items: [
           {
             type: 'doc',
@@ -50,7 +50,7 @@ const config = {
             label: 'Tutorial',
           },
           {
-            href: 'https://github.com/xiguaxigua/docusaurus-plugin-drawio',
+            href: 'https://github.com/xiguaxigua/docusaurus-plugin-mindmap',
             label: 'GitHub',
             position: 'right',
           },

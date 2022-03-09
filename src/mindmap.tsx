@@ -7,11 +7,11 @@ import { convertData, debounce } from './utils/convert-data'
 import './index.css'
 import 'jsmind/style/jsmind.css'
 
-interface DrawioProps {
+interface MindmapProps {
   content: string
 }
 
-const Mindmap: FC<DrawioProps> = ({ content }) => {
+const Mindmap: FC<MindmapProps> = ({ content }) => {
   const mindmap = React.useRef<HTMLDivElement>(null)
   const [height, setHeight] = React.useState(0)
 
@@ -62,7 +62,7 @@ const Mindmap: FC<DrawioProps> = ({ content }) => {
   )
 }
 
-const Wrapper: FC<DrawioProps> = ({ content }) => {
+const Wrapper: FC<MindmapProps> = ({ content }) => {
   console.log(jsmind)
   return (
     <BrowserOnly fallback={<>loading...</>}>

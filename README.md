@@ -1,6 +1,6 @@
 # docusaurus-plugin-mindmap
 
-> support to use draw.io in your website
+> support to use mindmap in your website
 
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/xiguaxigua/docusaurus-plugin-mindmap/build/master)
 ![npm](https://img.shields.io/npm/v/docusaurus-plugin-mindmap)
