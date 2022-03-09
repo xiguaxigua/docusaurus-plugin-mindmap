@@ -14,13 +14,23 @@
 npm i docusaurus-plugin-mindmap
 ```
 
+## Add plugin
+
+```js
+  plugins: [
+    ['mindmap', {}],
+  ],
+```
+
 ## Quick Start
 
 in \*.mdx file
 
+<!-- prettier-ignore -->
 ```jsx
-import Mindmap from '@theme/Mindmap'
-;<Mindmap
+import Mindmap from '@theme/Mindmap';
+
+<Mindmap
   content={`
 - 前端
 -- HTML
