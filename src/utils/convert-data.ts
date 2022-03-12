@@ -15,7 +15,6 @@ function convertData(content: string) {
   const lines = content.split('\n').filter((v) => v)
   let result: MindmapNode = null
   const current: Record<number, MindmapNode> = {}
-  console.log('lines', lines)
   lines.forEach((line) => {
     const [prefix, value] = line.split(/\s/)
     const direction = prefix.includes('l') ? 'left' : 'right'

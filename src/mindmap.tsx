@@ -63,7 +63,6 @@ const Mindmap: FC<MindmapProps> = ({ content }) => {
 }
 
 const Wrapper: FC<MindmapProps> = ({ content }) => {
-  console.log(jsmind)
   return (
     <BrowserOnly fallback={<>loading...</>}>
       {() => <Mindmap content={content} />}
